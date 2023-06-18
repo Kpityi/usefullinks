@@ -1,1 +1,3 @@
-# usefulllinks
+# usefullinks
+
+Hasznos linkek a programozói projektmunkához és a jövőbeli projektekhez...

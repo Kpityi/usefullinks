@@ -1,0 +1,21 @@
+<div class="page-container">
+  <header class="sticky-top" ng-include src="'./html/navigate.html'"></header>
+
+  <main>
+    <h1 class="text-center my-4">Links</h1>
+    <div class="card-group container">
+      <div class="card m-2 text-center"  ng-repeat="link in links">
+        <img ng-src="./img/{{link.image}}" class="card-img-top p-1" alt="link image" >
+        <div class="card-body">
+          <h5 class="card-title">{{link.name}}</h5>
+          <p class="card-text" ng-if="appLanguage=='hu'">{{link.description_hu}}</p>
+          <p class="card-text" ng-if="appLanguage=='en'">{{link.description_en}}</p>
+          <a href="{{link.link}}" target="_blank" class="btn btn-primary ">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+
+  <footer ng-include src="'./html/footer.html'"></footer>
+</div>

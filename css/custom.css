@@ -1,0 +1,25 @@
+*:before, 
+*:after {
+  -webkit-box-sizing:border-box !important;
+          box-sizing:border-box !important;
+}
+main {
+	min-height: calc(100vh - 100px) !important;
+}
+.header-image{
+  background-image: url("../img/headbg.png");
+  height: 150px;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dropdown-menu li{
+  cursor: pointer;
+}
+.card{
+  min-width: 250px;
+  border: 1px solid gray !important;
+  border-radius: 10px !important;
+
+}
