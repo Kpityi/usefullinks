@@ -18,12 +18,14 @@
         <li class="nav-item">
           <a class="nav-link" aria-current="page" ui-sref="links" ui-sref-active="active" >Linkek</a>
         </li>
-      </ul>
+      </ul>      
+      <!-- Language dropdown menu -->
       <ul class="navbar-nav ">
-        <!-- Language dropdown menu -->
         <li class="nav-item dropdown ms-3 me-3 d-flex">
-          <a class="nav-link dropdown-toggle" role="button" 
-             data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle " 
+              role="button" 
+              data-bs-toggle="dropdown" 
+              aria-expanded="false">
             <img ng-src="./img/{{appLanguage}}.png" width="40px">            
           </a>          
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -40,7 +42,6 @@
           </ul>
         </li>
       </ul>
-          
     </div>
   </div>
 </nav>

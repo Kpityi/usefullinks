@@ -10,7 +10,8 @@
           <h5 class="card-title">{{link.name}}</h5>
           <p class="card-text" ng-if="appLanguage=='hu'">{{link.description_hu}}</p>
           <p class="card-text" ng-if="appLanguage=='en'">{{link.description_en}}</p>
-          <a href="{{link.link}}" target="_blank" class="btn btn-primary ">Go somewhere</a>
+          <a href="{{link.link}}" target="_blank" class="btn btn-primary"  ng-if="appLanguage=='hu'">Oldal felkeresése</a>
+          <a href="{{link.link}}" target="_blank" class="btn btn-primary"  ng-if="appLanguage=='en'">Go to page</a>
         </div>
       </div>
     </div>
